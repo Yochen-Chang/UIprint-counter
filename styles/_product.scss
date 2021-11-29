@@ -1,0 +1,45 @@
+$color-product-BG: #f3854f;
+
+#productBgT {
+  top: 0;
+  background-color: white;
+  z-index: -5;
+  @media (max-width: 690px) {
+    height: 100vh;
+    background-image: linear-gradient(white, $color-product-BG);
+  }
+}
+#productBgB {
+  top: 50vh;
+  background-color: $color-product-BG;
+  z-index: -5;
+  @media (max-width: 690px) {
+    background-color: transparent;
+  }
+}
+
+#productBg {
+  background-image: url("../materials/img/product_background.png");
+  background-position: center top;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  @media (max-width: 690px) {
+    background-size: 100vw auto;
+    background-position: center 3rem;
+  }
+}
+
+#cookBtn {
+  width: 6rem;
+  height: 6rem;
+  top: 72vh;
+  padding: 0.75rem;
+  background-color: $color-btn-light;
+  border-radius: 50%;
+  border: $color-btn-dark 8px solid;
+  box-shadow: $color-shadow 4px 4px;
+  transition: $transition-normal;
+  &:hover {
+    background-color: $color-btn-light-hover;
+  }
+}

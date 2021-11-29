@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yochen Chang" />
+    <meta name="robots" content="follow, index" />
+    <meta name="description" content="" />
+    <!-- Logo -->
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>食事カウンター</title>
+  </head>
+  <body>
+    <div id="imgFilter" class="h-100 pos-fix vw-50"></div>
+    <header class="vh-15">
+      <img id="logo" class="h-100 p-1" src="./materials/img/LOGO.png" alt="" />
+    </header>
+    <main class="vh-85 flexSCRow p-2">
+      <div id="foodImgs" class="flexBCRow pos-rel vw-80 h-80">
+        <img class="foodImg" src="./materials/img/soup.png" alt="" />
+        <img class="foodImg" src="./materials/img/cupnoodle-1.png" alt="" />
+        <img class="foodImg" src="./materials/img/cupnoodle-2.png" alt="" />
+        <img class="foodImg" src="./materials/img/packnoodle-1.png" alt="" />
+        <img class="foodImg" src="./materials/img/packnoodle-2.png" alt="" />
+      </div>
+      <div id="selectBtns" class="flexCCRow pos-rel vw-80">
+        <button id="prevBtn" class="selectBtn m-05"><</button>
+        <a href="./product.html"
+          ><button id="confirmBtn" class="selectBtn">選ぶ</button></a
+        >
+        <button id="nextBtn" class="selectBtn m-05">></button>
+      </div>
+      <div
+        id="foodDetail"
+        class="flexCCCol vw-30 pos-ab m-1 p-05 animation-fadeIn-right"
+      >
+        <h1 class="fs-15 fw-b p-15">インスタントラーメン</h1>
+        <article class="p-1">
+          インスタントラーメンとは、一般に「瞬間油熱乾燥法または熱風乾燥法（ノンフライ製法）によって製造され、熱湯をかける、または鍋で煮る等でスープも同時に調理できる即席ラーメン」であるが、明確な定義はない。包装は袋入り、カップ入りがあり、麺はフライ麺、乾麺等の種類がある。即席麺、即席ラーメンとも呼称される。
+          <br />
+          日本で生まれた食品であり、日本国外に多数輸出され、また技術移転により現地製造されて広く食べられている。台湾、韓国、香港など、日本国外における「ラーメン」は、飲食店のメニューであっても、即席麺を調理した料理である事が少なくない。
+        </article>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+  <!-- <script src="./app.js"></script> -->
+</html>

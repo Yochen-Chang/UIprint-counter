@@ -1,0 +1,102 @@
+$color-slideDiv: rgba(255, 255, 255, 0.8);
+$color-bg-cooking: #ffd65c;
+$size-width-slideDiv: 30rem;
+$size-width-slideDiv-sd: 22rem;
+$size-height-slideDiv: 42rem;
+$size-height-slideDiv-sd: 40rem;
+$position-bottom: 37rem;
+$position-bottom-sd: 36rem;
+
+#cookingBg {
+  background-color: $color-bg-cooking;
+  top: 0;
+  left: 0;
+}
+
+#slideDiv {
+  width: $size-width-slideDiv;
+  height: $size-height-slideDiv;
+  background-color: $color-slideDiv;
+  bottom: -$position-bottom;
+  z-index: 15;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+  &.slideShow {
+    animation: slideShow 1.5s forwards;
+  }
+  &.slideHide {
+    animation: slideHide 1.5s forwards;
+  }
+  @media (max-width: 1110px) {
+    bottom: -$position-bottom-sd;
+    width: $size-width-slideDiv-sd;
+    height: $size-height-slideDiv-sd;
+    h1 {
+      font-size: 1.2rem;
+    }
+    &.slideShow {
+      animation: slideShow-sd 1.5s forwards;
+    }
+    &.slideHide {
+      animation: slideHide-sd 1.5s forwards;
+    }
+  }
+}
+@keyframes slideShow {
+  from {
+    bottom: -$position-bottom;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@keyframes slideShow-sd {
+  from {
+    bottom: -$position-bottom-sd;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@keyframes slideHide {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -$position-bottom;
+  }
+}
+@keyframes slideHide-sd {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -$position-bottom-sd;
+  }
+}
+#imgLogo {
+  top: 1vh;
+  z-index: 5;
+}
+#imgTitle {
+  top: 20vh;
+  z-index: 10;
+}
+#imgBg {
+  bottom: -25vh;
+  z-index: 5;
+}
+
+@media (max-width: 1110px) {
+  #imgTitle {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+#slideImg {
+  border-radius: 1rem;
+}
