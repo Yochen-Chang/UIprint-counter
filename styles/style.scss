@@ -6,6 +6,8 @@
   line-height: 150%;
 }
 
+@import "./myStyleLib";
+
 $color-bg-main: rgb(240, 231, 130);
 $color-bg-second: rgb(220, 205, 55);
 $color-bg-text: rgba(255, 255, 255, 0.35);
@@ -140,6 +142,9 @@ body {
   background-color: $color-bg-text;
   border-radius: 1rem;
   opacity: 0;
+  &.detailAnimation {
+    animation: fadeIn-right 1s forwards;
+  }
   @media (max-width: 765px) {
     h1 {
       font-size: 1.2rem;
@@ -149,7 +154,9 @@ body {
     position: relative;
     width: 90vw;
     top: 0;
-    animation: fadeIn-bottom 1s forwards;
+    &.detailAnimation {
+      animation: fadeIn-bottom 1s forwards;
+    }
   }
 }
 @media (max-width: 765px) {
@@ -164,6 +171,5 @@ body {
   }
 }
 
-@import "./myStyleLib";
 @import "./product";
 @import "./cooking";

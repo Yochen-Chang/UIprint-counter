@@ -122,6 +122,6 @@ function removeAnimation() {
 }
 
 function detailRefresh() {
-  foodDetail.classList.remove("animation-fadeIn-right");
-  setTimeout(`foodDetail.classList.toggle("animation-fadeIn-right")`, 500);
+  foodDetail.classList.remove("detailAnimation");
+  setTimeout(`foodDetail.classList.toggle("detailAnimation")`, 500);
 }
